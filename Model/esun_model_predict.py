@@ -82,7 +82,7 @@ for seed in seed_list:
                 new_model = stack_models([xgb2,lgb,blender],meta_model=xgb2,fold=5)                
         
             print(model_name)
-            pred_holdout3 = predict_model(new_model, data=df_test) #boosted_lgb #bagged_lgb
+            pred_holdout3 = predict_model(new_model, data=df_test) 
             pred_holdout3['proba']=np.where(pred_holdout3.prediction_label==1,pred_holdout3.prediction_score, 1-pred_holdout3.prediction_score)
             pred_holdout3=pd.concat([df_test[['cust_id','alert_key','date','maxdate']],pred_holdout3],axis=1)
             pred_holdout3[['alert_key','proba']].to_csv('../output/'+str(seed)+'_'+model_name+'_'+csv, index=False)

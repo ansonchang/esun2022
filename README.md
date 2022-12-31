@@ -14,20 +14,23 @@
 ```
 
 ## 可復現步驟
-0. dataset 先放到上一層 data 目錄
+0. 安裝套件
 
-1. 執行 preprocess :
-$ cd Proprocess
-$ python esun_preprocess.py
-   
-2. 執行 model training & prediction : (總共 500 次 model training 需要執行 1.5 hours)
-   cd Model
-   python esun_preprocess.py
+   $ pip install requirements.txt
 
-3. 執行 rank ensemble => 
-   cd Model
-   python ./Model/esun_rank_ensemble.py
+1. 原始 dataset 需放置在上一層 data 目錄
 
-4. 得到最後結果 
+2. 執行資料預處理步驟 :
+  $ cd Proprocess
+  $ python esun_preprocess.py
 
+3. 執行模型訓練與預測 : (總共 500 次 model training 產生 100個預測檔案, 需要 1.5 hours)
+  $ cd Model
+  $ python esun_preprocess.py
+
+4. 執行  Rank ensemble (100 預測檔案, 預測最終檔案)
+  $ cd Model
+  $ python ./Model/esun_rank_ensemble.py
+
+5. 得到最後結果 
 

@@ -5,12 +5,12 @@
 ## 每個資料夾/檔案的用途
 ```
 ├ Preprocess
-│ └ esun_preprocess.py             (前處理與特徵工程, 在 csv 目錄產生 train dataset 與 private test tdataset)
+│ └ esun_preprocess.py             (前處理與特徵工程, 在 csv 目錄產生 train/test dataset)
 ├ Model
-│ ├ esun_model_predict.py          (model訓練, 在 output 目錄產生 model預測結果)
-│ └ esun_rank_ensemble.py          (ensenble model預測結果, 在 output 目錄產生最終的結果)
-├ csv                              (放置特徵工程後的資料集目錄)
-├ output                           (放置模型預測結果的資料集目錄)
+│ ├ esun_model_predict.py          (model 訓練與預測, 在 output 目錄產生 model 預測結果)
+│ └ esun_rank_ensemble.py          (ensenble 各 model 的預測結果, 在 output 目錄產生最終的結果)
+├ csv                              (放置 data prepocess 後的資料集目錄)
+├ output                           (放置 model prediction 後的資料集目錄)
 ├ requirements.txt
 └ README.md
 ```

@@ -17,8 +17,8 @@
 0. dataset 先放到上一層 data 目錄
 
 1. 執行 preprocess :
-   cd Proprocess
-   python esun_preprocess.py
+$ cd Proprocess
+$ python esun_preprocess.py
    
 2. 執行 model training & prediction : (總共 500 次 model training 需要執行 1.5 hours)
    cd Model

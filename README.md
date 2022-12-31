@@ -19,7 +19,7 @@
 
 0. 安裝套件
 ```
-$ pip install requirements.txt
+$ pip install -r requirements.txt
 ```
 
 1. 執行資料預處理步驟 : (原始 dataset 需放置在上一層 data 目錄)

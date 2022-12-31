@@ -24,9 +24,10 @@
    cd Model
    python esun_preprocess.py
 
-3. 執行 rank ensemble => python ./Model/esun_rank_ensemble.py
+3. 執行 rank ensemble => 
+   cd Model
+   python ./Model/esun_rank_ensemble.py
 
 4. 得到最後結果 
 
 
-## 可復現模型結果之超參數設定

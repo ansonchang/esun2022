@@ -18,6 +18,7 @@
 ## 可復現步驟
 
 0. 安裝套件
+
 ```
 $ pip install requirements.txt
 ```
@@ -26,21 +27,21 @@ $ pip install requirements.txt
 
 2. 執行資料預處理步驟 :
 ```
-   $ cd Proprocess
-   $ python esun_preprocess.py
+$ cd Proprocess
+$ python esun_preprocess.py
 ```
 
 3. 執行模型訓練與預測 : (總共 500 次 model training 產生 100個預測檔案, 需要 1.5 hours)
 ```
-   $ cd Model
-   $ python esun_preprocess.py
+$ cd Model
+$ python esun_preprocess.py
 ```
 
 4. 執行  Rank ensemble (100 預測檔案, 預測最終檔案)
  ```  
-   $ cd Model
-   $ python esun_rank_ensemble.py
+$ cd Model
+$ python esun_rank_ensemble.py
  ```
- 
+
 5. 得到最後結果 
 

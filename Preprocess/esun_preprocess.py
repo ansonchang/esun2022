@@ -20,6 +20,8 @@ def recall_n_1(pred_p, true_l):
         if cur_sum==n:
             return n/(i+1)
 
+print("Start data preprocessing...")
+    
 cust=pd.read_csv('../../data/public_train_x_custinfo_full_hashed.csv')
 ccba=pd.read_csv('../../data/public_train_x_ccba_full_hashed.csv')
 cdtx=pd.read_csv('../../data/public_train_x_cdtx0001_full_hashed.csv')
@@ -200,3 +202,6 @@ df_train=df_train_all.copy()
 
 
 df_train.to_csv('../csv/df_train_280.csv', index=False)
+
+print("Finish data preprocessing...")
+print("Generate train/test datasets in csv direcotory")

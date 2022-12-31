@@ -34,7 +34,7 @@ $ cd Model
 $ python esun_preprocess.py
 ```
 
-4. 執行  Rank ensemble (100 預測檔案, 預測最終檔案)
+4. 執行  Rank ensemble (ensemble 100 預測檔案, 得到最終檔案)
  ```  
 $ cd Model
 $ python esun_rank_ensemble.py

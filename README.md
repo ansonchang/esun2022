@@ -1,8 +1,8 @@
-# 環境
+## 環境
 * 系統平台：Ubuntu
 * 程式語言：python 3.7.13
 
-# 每個資料夾/檔案的用途
+## 每個資料夾/檔案的用途
 ```
 ├ Preprocess
 │ └ esun_preprocess.py             (前處理與特徵工程, 在 csv 目錄產生 train dataset 與 private test tdataset)
@@ -13,7 +13,7 @@
 └ README.md
 ```
 
-# 可復現步驟
+## 可復現步驟
 0. dataset 先放到上一層 data 目錄
 
 1. 執行 preprocess :
@@ -29,4 +29,4 @@
 4. 得到最後結果 
 
 
-# 可復現模型結果之超參數設定
+## 可復現模型結果之超參數設定

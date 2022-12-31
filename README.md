@@ -15,7 +15,6 @@
 
 ## 可復現步驟
 0. 安裝套件
-
    $ pip install requirements.txt
 
 1. 原始 dataset 需放置在上一層 data 目錄

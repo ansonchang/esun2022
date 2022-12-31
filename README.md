@@ -34,6 +34,7 @@
    
 
    $ cd Proprocess
+
    $ python esun_preprocess.py
 
    
@@ -43,6 +44,7 @@
    
 
    $ cd Model
+
    $ python esun_preprocess.py
 
    
@@ -52,6 +54,7 @@
    
 
    $ cd Model
+
    $ python ./Model/esun_rank_ensemble.py
 
    

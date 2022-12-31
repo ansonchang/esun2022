@@ -31,7 +31,7 @@ $ python esun_preprocess.py
 2. 執行模型訓練與預測 : (總共 500 次 model training 產生 100個預測檔案, 需要 1.5 hours)
 ```
 $ cd Model
-$ python esun_preprocess.py
+$ python esun_model_predict.py
 ```
 
 3. 執行  Rank ensemble (ensemble 100 預測檔案, 得到最終檔案)

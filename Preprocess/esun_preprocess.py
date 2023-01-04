@@ -31,7 +31,7 @@ alert_test=pd.read_csv('../../data/public_x_alert_date.csv')
 
 alert_train=pd.read_csv('../../data/train_x_alert_date.csv')
 y_train=pd.read_csv('../../data/train_y_answer.csv')
-y_test=pd.read_csv('../../data/Sample.csv')
+#y_test=pd.read_csv('../../data/Sample.csv') #這是 submit 的範例檔案
 
 cust_private=pd.read_csv('../../data/private_x_custinfo_full_hashed.csv')
 ccba_private=pd.read_csv('../../data/private_x_ccba_full_hashed.csv')
@@ -46,6 +46,8 @@ cdtx=pd.concat([cdtx,cdtx_private],axis=0).reset_index(drop=True)
 dp=pd.concat([dp,dp_private],axis=0).reset_index(drop=True)
 remit=pd.concat([remit,remit_private],axis=0).reset_index(drop=True)
 alert_test=pd.concat([alert_test,alert_test_private],axis=0).reset_index(drop=True)
+
+y_test=alert_test.copy()
 
 # Calculate dataset (date<=290)
  
